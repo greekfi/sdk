@@ -1,7 +1,7 @@
-import { encodeAbiParameters, keccak256, type Hex } from "viem";
-import type { Address, Chain } from "./types";
+import { type Address, encodeAbiParameters, keccak256, type Hex } from "viem";
+import type { Chain } from "./types";
 
-/** Factory.createOption parameters. */
+/** Factory.createOption parameters. Address is viem's, so it follows each app's abitype config. */
 export interface MarketParams {
   collateral: Address;
   consideration: Address;
