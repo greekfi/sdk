@@ -4,3 +4,4 @@ export * from "./rpc";
 export { DEPLOYMENT_BLOCKS, RELEASE } from "./generated/deployments";
 export { abiSource, contracts } from "./generated/abi";
 export { CB_STOCKS } from "./data/cbStocks";
+export { marketKey, setupMessage, type MarketParams } from "./market";

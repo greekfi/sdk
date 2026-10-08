@@ -386,6 +386,8 @@ __metadata:
     tsx: "npm:^4.20.0"
     typescript: "npm:^5.9.0"
     viem: "npm:^2"
+  peerDependencies:
+    viem: ^2
   languageName: unknown
   linkType: soft
 
