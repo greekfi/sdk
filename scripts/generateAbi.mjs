@@ -31,11 +31,10 @@ function minimalAbi(entry) {
     m.name = entry.name;
   }
 
-  if (entry.inputs?.length > 0) {
-    m.inputs = entry.inputs.map(minParam);
-  }
+  // Keep empty arrays: viem and abitype require inputs (and function outputs) to be present.
+  if (entry.inputs) m.inputs = entry.inputs.map(minParam);
 
-  if (entry.outputs?.length > 0) {
+  if (entry.outputs) {
     m.outputs = entry.outputs.map((o) => {
       const out = { type: o.type };
       if (o.name) out.name = o.name;
