@@ -1,0 +1,9 @@
+/** v2.0: same addresses on every chain (CREATE2). Per-chain blocks live in chains/*.ts. */
+export const V2 = {
+  release: "v2.0",
+  factory: "0x9999999999995aa18A8944e311ce792a9b90A8b1",
+  optionTemplate: "0x02B572aea5365e67301F42B87042C274Ac4c7960",
+  receiptTemplate: "0xd66B78A75b7c4E0AB5074701d229a10531b0e752",
+  optionUtils: "0x7Fdda380f809bF5F9dF6eF3C23cd9Efd8FD16f1a",
+  factoryDeployer: "0x4Ca1f4A8371301FA3FD0F95831E8F7B0b32c6a60",
+} as const;
