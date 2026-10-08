@@ -1,5 +1,5 @@
 import type { Chain } from "../types";
-import { V2 } from "../deployments";
+import { DEPLOYMENT_BLOCKS, RELEASE } from "../generated/deployments";
 
 export const ethereum: Chain = {
   id: 1,
@@ -11,7 +11,7 @@ export const ethereum: Chain = {
     alchemy: "eth-mainnet",
     fallback: ["https://ethereum-rpc.publicnode.com"],
   },
-  deployment: { ...V2, deploymentBlock: 25911928 },
+  deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[1] },
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2" },
     { symbol: "WBTC", name: "Wrapped Bitcoin", decimals: 8, kind: "underlying", address: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599" },

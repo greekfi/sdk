@@ -1,0 +1,8 @@
+{
+  "networkName": "hemi",
+  "0x9999999999995aa18A8944e311ce792a9b90A8b1": "Factory",
+  "0x02B572aea5365e67301F42B87042C274Ac4c7960": "Option",
+  "0xd66B78A75b7c4E0AB5074701d229a10531b0e752": "Receipt",
+  "0x7Fdda380f809bF5F9dF6eF3C23cd9Efd8FD16f1a": "OptionUtils",
+  "0x4Ca1f4A8371301FA3FD0F95831E8F7B0b32c6a60": "FactoryDeployer"
+}

@@ -20,13 +20,18 @@
     "build": "tsup",
     "prepack": "tsup",
     "test": "tsx --test test/*.test.ts",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "generate:abi": "node scripts/generateAbi.mjs",
+    "register": "node scripts/registerDeployment.mjs",
+    "check": "node scripts/generateAbi.mjs --check && node scripts/registerDeployment.mjs --all --check && tsx --test test/*.test.ts"
   },
   "devDependencies": {
     "@types/node": "^24",
+    "prettier": "^3",
     "tsup": "^8.5.0",
     "tsx": "^4.20.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "viem": "^2"
   },
   "packageManager": "yarn@4.13.0"
 }

@@ -1,0 +1,20 @@
+# Deployment configuration for the frozen contracts v2.0 source.
+# Compiler settings match foundry/foundry.toml; the deploy script checks the init-code hash.
+[profile.default]
+src = "foundry/contracts"
+script = "foundry/script"
+libs = ["foundry/lib"]
+remappings = [
+  "lib/=foundry/lib/",
+  "@openzeppelin/contracts/=foundry/lib/openzeppelin-contracts/contracts/",
+  "clone/=foundry/lib/clone/",
+  "solady/=foundry/lib/solady/src/",
+]
+fs_permissions = [{ access = "read", path = "./deployments" }]
+via_ir = true
+optimizer = true
+optimizer_runs = 200
+solc = "0.8.35"
+evm_version = "cancun"
+bytecode_hash = "none"
+cbor_metadata = false

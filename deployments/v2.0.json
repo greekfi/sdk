@@ -1,0 +1,38 @@
+{
+  "templates": {
+    "Option": "0x02B572aea5365e67301F42B87042C274Ac4c7960",
+    "Receipt": "0xd66B78A75b7c4E0AB5074701d229a10531b0e752"
+  },
+  "chains": {
+    "1": {
+      "name": "mainnet",
+      "deploymentBlock": 25911928,
+      "deployerTransaction": "0x48292b93d3ec16cf57db768cd4264f6f88ef95b69f48c84f9f4449f28aa69c49",
+      "factoryTransaction": "0xb66e471aa516ccfccd584b61d0e03b152bb9384107c54474ccdf91237a213723"
+    },
+    "56": {
+      "name": "bsc",
+      "deploymentBlock": 120154298,
+      "deployerTransaction": "0x891defea8d7c30a999d22ea59669c6e6eedada2ae4fa92bf560393a9f614b38f",
+      "factoryTransaction": "0xee2dbc360ec93916add93fd1dfe1b19123b8e0793a1e67f510b0c069b1014102"
+    },
+    "4663": {
+      "name": "robinhood",
+      "deploymentBlock": 55313109,
+      "deployerTransaction": "0x08eb33b5b7466b6c3c94fad716549dd8f8fc6ba0834d8331f38018e891b0946a",
+      "factoryTransaction": "0x4196aa376b77cce7edd20ebf9900fb81058bddd4f8126f5203350cb86bb8dd97"
+    },
+    "8453": {
+      "name": "base",
+      "deploymentBlock": 50918192,
+      "deployerTransaction": "0x7adb4a6f98d39741627be6753829b359590983a85ea6f46b25c8ede54d03851f",
+      "factoryTransaction": "0x9f8ab251ca716fe33f68192d677c9d3a9569dc9d03314f22333f473a8cef6a8e"
+    },
+    "43111": {
+      "name": "hemi",
+      "deploymentBlock": 5229320,
+      "deployerTransaction": "0xec08fc737db22ad7fbf4710541d26eb8b947884add2f6eb764d694346c76cc3b",
+      "factoryTransaction": "0x07228c2960a391469e544902da93ac51b17f09e5f0029e8710cdd378fb832adc"
+    }
+  }
+}

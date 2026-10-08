@@ -1,5 +1,5 @@
 import type { Chain } from "../types";
-import { V2 } from "../deployments";
+import { DEPLOYMENT_BLOCKS, RELEASE } from "../generated/deployments";
 
 export const bsc: Chain = {
   id: 56,
@@ -11,7 +11,7 @@ export const bsc: Chain = {
     alchemy: "bnb-mainnet",
     fallback: ["https://bsc-dataseed.bnbchain.org"],
   },
-  deployment: { ...V2, deploymentBlock: 120154298 },
+  deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[56] },
   tokens: [
 
   ],

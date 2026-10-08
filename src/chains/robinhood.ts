@@ -1,5 +1,5 @@
 import type { Chain } from "../types";
-import { V2 } from "../deployments";
+import { DEPLOYMENT_BLOCKS, RELEASE } from "../generated/deployments";
 
 export const robinhood: Chain = {
   id: 4663,
@@ -11,7 +11,7 @@ export const robinhood: Chain = {
     alchemy: "robinhood-mainnet",
     fallback: ["https://rpc.mainnet.chain.robinhood.com"],
   },
-  deployment: { ...V2, deploymentBlock: 55313109 },
+  deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[4663] },
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73" },
     { symbol: "VIRTUAL", name: "Virtuals Protocol", decimals: 18, kind: "underlying", address: "0xc6911796042b15d7Fa4F6CDe69e245DdCd3d9c31" },
