@@ -8,7 +8,7 @@ export const abiSource = {
 export const contracts = {
   Factory: {
     abi: [
-      { type: "constructor", inputs: [] },
+      { type: "constructor", inputs: [], stateMutability: "nonpayable" },
       {
         type: "function",
         name: "DEFAULT_EXERCISE_WINDOW",
@@ -298,6 +298,7 @@ export const contracts = {
           { name: "name_", type: "string" },
           { name: "symbol_", type: "string" },
         ],
+        stateMutability: "nonpayable",
       },
       {
         type: "function",
@@ -664,6 +665,7 @@ export const contracts = {
           { name: "name_", type: "string" },
           { name: "symbol_", type: "string" },
         ],
+        stateMutability: "nonpayable",
       },
       {
         type: "function",

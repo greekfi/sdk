@@ -43,13 +43,8 @@ function minimalAbi(entry) {
     });
   }
 
-  if (entry.type === "function" && entry.stateMutability) {
-    m.stateMutability = entry.stateMutability;
-  }
-
-  if (entry.type === "constructor" && entry.stateMutability === "payable") {
-    m.stateMutability = "payable";
-  }
+  // abitype requires stateMutability on functions, constructors, fallback, and receive.
+  if (entry.stateMutability) m.stateMutability = entry.stateMutability;
 
   if (entry.anonymous) m.anonymous = true;
 
