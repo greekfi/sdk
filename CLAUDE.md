@@ -11,9 +11,11 @@ git dependency; nothing here should be duplicated in those repos.
 - `src/generated/` — never hand-edit:
   - `abi.ts` from `scripts/generateAbi.mjs` (frozen contracts build)
   - `deployments.ts` from `scripts/registerDeployment.mjs` (release addresses, deploy blocks)
-- `src/data/cbStocks.json` — Coinbase tokenized-stock catalog for Base.
+- `src/data/cbStocks.json` — Coinbase tokenized-stock catalog for Base (`yarn sync:stocks` refreshes it
+  from the issuer API).
 - `deployments/`, `broadcast/` — release manifest, mining record, per-chain address maps, forge
   broadcast logs (`deployments/archive/` holds older releases).
+- `scripts/verify-vanity.mjs`, `scripts/create2crunch-owner-bound.patch` — vanity-salt mining tools.
 - `foundry/` — SUBMODULE `greekfi/contracts`, pinned to the frozen source in
   `deployments/mining-inputs.json`. Advance it only for a new release.
 

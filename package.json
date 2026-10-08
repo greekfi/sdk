@@ -23,7 +23,9 @@
     "check-types": "tsc --noEmit",
     "generate:abi": "node scripts/generateAbi.mjs",
     "register": "node scripts/registerDeployment.mjs",
-    "check": "node scripts/generateAbi.mjs --check && node scripts/registerDeployment.mjs --all --check && tsx --test test/*.test.ts"
+    "check": "node scripts/generateAbi.mjs --check && node scripts/registerDeployment.mjs --all --check && tsx --test test/*.test.ts",
+    "sync:stocks": "node scripts/syncCbStocks.mjs",
+    "verify:vanity": "node scripts/verify-vanity.mjs"
   },
   "devDependencies": {
     "@types/node": "^24",
