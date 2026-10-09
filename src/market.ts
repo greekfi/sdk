@@ -12,6 +12,20 @@ export interface MarketParams {
   windowSeconds: number;
 }
 
+/**
+ * On-chain strike from a human strike. Both are 18-decimal consideration per collateral,
+ * whatever the token decimals. Calls store the price; puts store `1e36 / price`.
+ */
+export function encodeStrike(price: bigint, isPut: boolean): bigint {
+  if (price <= 0n) throw new RangeError("Strike must be positive");
+  return isPut ? 10n ** 36n / price : price;
+}
+
+/** Human strike (18-decimal consideration per collateral) from an on-chain strike. */
+export function decodeStrike(strike: bigint, isPut: boolean): bigint {
+  return isPut && strike > 0n ? 10n ** 36n / strike : strike;
+}
+
 /** The Factory's key for a market (`optionFor(key)`). */
 export function marketKey(p: MarketParams): Hex {
   return keccak256(
