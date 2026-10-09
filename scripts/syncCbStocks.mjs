@@ -7,7 +7,8 @@ const { tokens } = await response.json();
 if (!Array.isArray(tokens) || !tokens.length) throw new Error("Empty Coinbase catalog");
 const seen = new Set();
 const catalog = tokens.map(t => {
-  if (!/^0x[0-9a-f]{40}$/i.test(t.contract_address) || !Number.isInteger(t.decimals) || t.decimals < 0 || t.decimals > 36 || !/^[A-Za-z0-9]+$/.test(t.symbol)) throw new Error("Invalid Coinbase token");
+  // Symbols are the ticker plus "c"; class shares keep their dot (BRK.Bc).
+  if (!/^0x[0-9a-f]{40}$/i.test(t.contract_address) || !Number.isInteger(t.decimals) || t.decimals < 0 || t.decimals > 36 || !/^[A-Za-z0-9]+(\.[A-Za-z0-9]+)?$/.test(t.symbol)) throw new Error("Invalid Coinbase token");
   const address = t.contract_address.toLowerCase();
   if (seen.has(address)) throw new Error(`Duplicate token ${address}`);
   seen.add(address);
