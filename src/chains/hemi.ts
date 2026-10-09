@@ -12,6 +12,7 @@ export const hemi: Chain = {
     fallback: ["https://hemi.drpc.org","https://rpc.hemi.network/rpc"],
   },
   deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[43111] },
+  quote: "USDC.e",
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0x4200000000000000000000000000000000000006" },
     { symbol: "WBTC", name: "Wrapped Bitcoin", decimals: 8, kind: "underlying", address: "0x03C7054BCB39f7b2e5B2c7AcB37583e32D70Cfa3" },

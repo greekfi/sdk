@@ -26,3 +26,11 @@ test("every registered deployment has a chain file, and every chain file is regi
     Object.keys(DEPLOYMENT_BLOCKS).map(Number).sort((a, b) => a - b),
   );
 });
+
+test("each chain's quote token is a listed stablecoin; stock tickers are well formed", () => {
+  for (const chain of CHAINS) {
+    const quote = chain.tokens.find(t => t.symbol === chain.quote);
+    assert.equal(quote?.kind, "stable", `${chain.key} quote ${chain.quote}`);
+    for (const t of chain.tokens) if (t.ticker) assert.match(t.ticker, /^[A-Z]{1,5}$/, `${chain.key} ${t.symbol}`);
+  }
+});

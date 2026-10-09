@@ -12,6 +12,7 @@ export const ethereum: Chain = {
     fallback: ["https://ethereum-rpc.publicnode.com"],
   },
   deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[1] },
+  quote: "USDC",
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2" },
     { symbol: "WBTC", name: "Wrapped Bitcoin", decimals: 8, kind: "underlying", address: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599" },

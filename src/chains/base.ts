@@ -13,6 +13,7 @@ export const base: Chain = {
     fallback: ["https://mainnet.base.org","https://base-rpc.publicnode.com"],
   },
   deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[8453] },
+  quote: "USDC",
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0x4200000000000000000000000000000000000006" },
     { symbol: "cbBTC", name: "Coinbase Wrapped BTC", decimals: 8, kind: "underlying", address: "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf" },

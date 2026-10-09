@@ -12,6 +12,7 @@ export const robinhood: Chain = {
     fallback: ["https://rpc.mainnet.chain.robinhood.com"],
   },
   deployment: { ...RELEASE, deploymentBlock: DEPLOYMENT_BLOCKS[4663] },
+  quote: "USDG",
   tokens: [
     { symbol: "WETH", name: "Wrapped Ether", decimals: 18, kind: "underlying", address: "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73" },
     { symbol: "VIRTUAL", name: "Virtuals Protocol", decimals: 18, kind: "underlying", address: "0xc6911796042b15d7Fa4F6CDe69e245DdCd3d9c31" },

@@ -11,6 +11,8 @@ export interface Token {
   address: Address;
   /** Coinbase tokenized stock (Base). */
   cbStock?: true;
+  /** US equity ticker for other tokenized stocks, priced from the equity market (e.g. "AAPL"). */
+  ticker?: string;
   iconUrl?: string;
 }
 
@@ -39,5 +41,7 @@ export interface Chain {
     fallback: string[];
   };
   deployment: Deployment;
+  /** Symbol of the stablecoin markets on this chain are quoted and paid in. */
+  quote: string;
   tokens: Token[];
 }
