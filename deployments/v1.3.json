@@ -1,0 +1,33 @@
+{
+  "templates": {
+    "Option": "0xa6a7d12e78F73937150ee7f0aB538fC2f1F616af",
+    "Receipt": "0xA04A131Ac588a92C3702f8B232F9915fdAba829D"
+  },
+  "chains": {
+    "1": {
+      "name": "mainnet",
+      "deploymentBlock": 26253337,
+      "factoryTransaction": "0xf2cae46f6e024679570acf8d408f29ea70e0db177e56cbe96f4b498c5180821c"
+    },
+    "56": {
+      "name": "bsc",
+      "deploymentBlock": 129267353,
+      "factoryTransaction": "0x93d8326488850062b3413d8ba233abc6ad34132fbd52ff050a3ea9780224670e"
+    },
+    "4663": {
+      "name": "robinhood",
+      "deploymentBlock": 95706048,
+      "factoryTransaction": "0xadf7bfaf5403604290074588a03c7a102b9d1cc2673695bd360657b534676b00"
+    },
+    "8453": {
+      "name": "base",
+      "deploymentBlock": 52972103,
+      "factoryTransaction": "0xbaa8822bb432883ff207275162d215cfdd37097600d11341a1f99c4cd7016916"
+    },
+    "43111": {
+      "name": "hemi",
+      "deploymentBlock": 5572294,
+      "factoryTransaction": "0xfaa61b78f8f7f0c99bd8fa3e4affff1b47fd59dfb2b9ce79f566afba1be0e0f3"
+    }
+  }
+}
