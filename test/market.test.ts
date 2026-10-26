@@ -8,7 +8,7 @@ test("setup message text is stable (the maker verifies signatures against it)", 
     [
       "Greek trade setup",
       "Chain: 8453",
-      "Factory: 0x9999999999995aa18a8944e311ce792a9b90a8b1",
+      "Factory: 0x9999999999906a9a5b3cfb1151ac6812b3042191",
       "Terms: 0xabc",
       "Wallet: 0xabcd",
       "Amount: 1000000",

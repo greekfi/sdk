@@ -19,7 +19,7 @@ assert.equal(
   predict(
     "0x18706695e2966efa6c565436e2d5a788ca3321d0123456780100000002000000",
   ).toLowerCase(),
-  "0x16ec2c41ec296dbb5546bdbc7e1aff140fdb7462",
+  "0x9f71b797cb1c45d5f2ca465625d6830467521777",
 );
 
 const [salt, candidate] = process.argv.slice(2);

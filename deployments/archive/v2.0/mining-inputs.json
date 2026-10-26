@@ -1,0 +1,18 @@
+{
+  "releaseTag": "v2.0",
+  "sourceCommit": "23bfee78157f16f0b270cf3f8f6853a469ecdb18",
+  "deployer": "0x4Ca1f4A8371301FA3FD0F95831E8F7B0b32c6a60",
+  "owner": "0x18706695e2966EfA6c565436e2d5A788Ca3321d0",
+  "optionUtils": "0x7Fdda380f809bF5F9dF6eF3C23cd9Efd8FD16f1a",
+  "initCodeHash": "0x84bb7828671ed09706351c14d0db83f6a6038c62c32c647833d8769da775fb6e",
+  "leadingNines": 11,
+  "minerRepository": "https://github.com/0age/create2crunch",
+  "minerCommit": "f0ad004acc874e38f7bb1e3424d44d3536be8ac7",
+  "mining": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpuCount": 8,
+    "elapsedSecondsApprox": 442,
+    "leadingNinesFound": 12,
+    "logArchive": "mining-v2.0.tar.gz"
+  }
+}

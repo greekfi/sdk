@@ -5,7 +5,7 @@ import { ethereum } from "./ethereum";
 import { hemi } from "./hemi";
 import { robinhood } from "./robinhood";
 
-/** Chains with a live v2.0 deployment. Base first: it is the default chain. */
+/** Chains with a live v1.3 deployment. Base first: it is the default chain. */
 export const CHAINS: Chain[] = [base, ethereum, bsc, robinhood, hemi];
 
 export function getChain(chainId: number): Chain {
